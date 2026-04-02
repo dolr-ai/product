@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This document outlines the standard procedure for deploying our backend services using **Docker** and managing secrets securely through environment variables.
+This document outlines the standard procedure for deploying our backend services using **Docker** and managing secrets securely through environment variables. You need to wire up your CI pipeline to follow the below steps on every push to the main branch, ensuring that deployments are consistent and secure.
 
 ---
 
@@ -38,8 +38,10 @@ For multiple secrets:
 Docker stores resolved environment variables in the container’s configuration when it starts, so secrets remain available after reboot.
 Re-enter secrets only if containers are rebuilt or recreated.
 
+### 5. Fetching Secrets
+
+The secrets that you'll use and create need to go into the team Vault maintained at vault.yral.com. Ask Naitik from the team for help on this on the Team Chat channel if you're struggling with this.
 
 ### Notes
 - Never store secrets in .env files on the server.
 - This approach should be configured using CI on every push to main branch.
-
