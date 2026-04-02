@@ -16,6 +16,12 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEiXkPkZghjS+QfvScVTFRsUZCh7ibH80bb/ls4ddJHs
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF1ugc8F2HoW2SGAn35Eoo3bt8KjGgfTn8fIczXM40o2 ravi@gobazzinga.io
 ```
 
+## Rishi Chadha (rishi@gobazzinga.io)
+
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE6RhsV0UkNgy/ngh2IyW4DOmnsyo3GgBvq/2eM8RLP9 rishi@gobazzinga.io
+```
+
 ## Saikat Das (saikatdas0790@gmail.com)
 
 ```
