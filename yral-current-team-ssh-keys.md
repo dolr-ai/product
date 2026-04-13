@@ -10,6 +10,12 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILGb2pAXEJeBmrfgkIKU9egGb5a0bDIYqpazZGnxLV4J
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEiXkPkZghjS+QfvScVTFRsUZCh7ibH80bb/ls4ddJHs naitik@gobazzinga.io
 ```
 
+## Prakash Bhatt (prakash@gobazzinga.io)
+
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICetWiHXjTBs+Xw7k024xV5YGaIxtQiAk6O+Ge2OZ0kU prakash@gobazzinga.io
+```
+
 ## Ravi Sawlani (ravi@gobazzinga.io)
 
 ```
@@ -42,4 +48,3 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBnpCcMpKKwA8oblsTUhy4f7agQwQm3zosOt1SIAdV/+
 ```
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPxoyD5E9FKjoG+TkB6/sSEUJ3/MBIqDnwsIIhjdfMzH sreyas@gobazzinga.io
 ```
-
