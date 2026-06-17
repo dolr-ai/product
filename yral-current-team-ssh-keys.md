@@ -30,5 +30,5 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEk4PvXhngz7NQRu/OYThH+gH/BLRzncjiAMNo16NCHV
 
 ## Sarvesh Sharma (sarvesh@gobazzinga.io)
 ```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICbzdGvEwbNzK61s7dEEpTq6AO6qHZUCi6+jgnsIsZuh sarvesh@gobazzinga.io
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGPshcyPLqPEHcHnb3cM2VC9NDj+UYNwKlIDqtlsBGNR sarvesh@gobazzinga.io
 ```
