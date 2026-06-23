@@ -5,7 +5,7 @@ We expose all events emitted by our client apps, primarily mobile apps. All inte
 ## Details
 
 - **Endpoint:** `https://kafka-bridge.yral.com`
-- **Auth:** Basic Auth (`Authorization: Basic <base64(:token)>`)
+- **Auth:** Bearer token via `X-Bearer-Token` header
 - **Token:** Get from [Vault](https://vault.yral.com/ui/vault/secrets/secret/kv/SAIKAT_KAFKA_BRIDGE_BEARER_TOKEN)
 - **Topic:** `snowplow-enriched`
 - **Consumer group prefix:** `bridge-`
@@ -19,7 +19,7 @@ We expose all events emitted by our client apps, primarily mobile apps. All inte
 TOKEN="<from_vault>"
 
 curl -X POST "https://kafka-bridge.yral.com/consumers/bridge-my-app" \
-  -u ":$TOKEN" \
+  -H "X-Bearer-Token: $TOKEN" \
   -H "Content-Type: application/vnd.kafka.v2+json" \
   -d '{"format":"binary","auto.offset.reset":"latest"}'
 ```
@@ -38,7 +38,7 @@ Response:
 INSTANCE_ID="kafka-bridge-abc123-..."
 
 curl -X POST "https://kafka-bridge.yral.com/consumers/bridge-my-app/instances/$INSTANCE_ID/subscription" \
-  -u ":$TOKEN" \
+  -H "X-Bearer-Token: $TOKEN" \
   -H "Content-Type: application/vnd.kafka.v2+json" \
   -d '{"topics":["snowplow-enriched"]}'
 ```
@@ -46,9 +46,9 @@ curl -X POST "https://kafka-bridge.yral.com/consumers/bridge-my-app/instances/$I
 ### 3. Poll for records
 
 ```bash
-curl -H "Accept: application/vnd.kafka.binary.v2+json" \
-  "https://kafka-bridge.yral.com/consumers/bridge-my-app/instances/$INSTANCE_ID/records?timeout=10000" \
-  -u ":$TOKEN"
+curl -H "X-Bearer-Token: $TOKEN" \
+  -H "Accept: application/vnd.kafka.binary.v2+json" \
+  "https://kafka-bridge.yral.com/consumers/bridge-my-app/instances/$INSTANCE_ID/records?timeout=10000"
 ```
 
 Response (array of records, base64-encoded values):
