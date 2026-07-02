@@ -1,9 +1,9 @@
 # Self hosted LLM
 
 ## Details
-URL: https://saikat-llm-mixture-of-experts.yral.com
+URL: https://saikat-llm-general.yral.com
 Model: Qwen/Qwen3.6-35B-A3B-FP8
-Bearer Token: `Bearer <secret_value>`. Secret available in vault [here](https://vault.yral.com/ui/vault/secrets/secret/kv/SAIKAT_LLM_MIXTURE_OF_EXPERTS)
+Bearer Token: `Bearer <secret_value>`. Secret available in vault [here](https://vault.yral.com/ui/vault/secrets/secret/kv/SAIKAT_LLM_GENERAL)
 
 The server supports
 - completion API
